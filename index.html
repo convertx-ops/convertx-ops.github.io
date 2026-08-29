@@ -1,87 +1,319 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>ConvertX Ops | 24/7 AI Voice Agents for Every Local Business</title>
-<meta name="description" content="AI voice agents that answer calls 24/7, qualify prospects, book appointments for solar, roofing, HVAC, plumbing, dental, real estate and more. a live demo.">
-<meta property="og:title" content="ConvertX Ops | 24/7 AI Voice Agents for Every Local Business"><meta property="og:description" content="AI voice agents that answer calls 24/7, qualify prospects, book appointments for solar, roofing, HVAC, plumbing, dental, real estate and more. a live demo.">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "ConvertX Ops", "description": "24/7 AI voice agents that capture leads for solar, roofing, HVAC, plumbing, dental, real estate, med spa, law, contractor and chiropractic businesses.", "email": "convertx.ops@gmail.com", "founder": {"@type": "Person", "name": "Rihan Pathan"}, "areaServed": "US", "url": "https://convertx-ops.github.io"}</script><style>
-:root{--brand:#0a9d6b;--ink:#0e1a16;--mut:#5a6b64;--bg:#fafdfb}
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ConvertX Ops | AI Voice Agent for Solar & High-Intent Inbound Leads</title>
+<meta name="description" content="ConvertX answers inbound solar and local-service calls 24/7, qualifies prospects by your rules, and books appointments automatically — so leads don't disappear when nobody answers.">
+<meta property="og:title" content="ConvertX Ops | Stop Losing High-Intent Leads to Missed Calls">
+<meta property="og:description" content="AI voice agent that answers, qualifies, and books inbound leads 24/7.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"ConvertX Ops","description":"24/7 AI voice agent that captures and converts inbound leads for solar and local service businesses.","email":"convertx.ops@gmail.com","founder":{"@type":"Person","name":"Rihan Pathan"},"areaServed":"US","url":"https://convertx-ops.github.io"}</script>
+<style>
+:root{--brand:#0a9d6b;--brand-d:#078154;--ink:#0e1a16;--mut:#56635d;--bg:#ffffff;--soft:#f4faf7;--line:#e3efe9;--dark:#0c1512}
 *{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.65}
-.wrap{max-width:880px;margin:auto;padding:0 20px}
-header.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;max-width:1100px;margin:auto;border-bottom:1px solid #e7efe9}
-.logo{font-weight:800;color:var(--brand);font-size:20px;letter-spacing:-.5px}
-.nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:14px}
-.hero{position:relative;overflow:hidden;background:radial-gradient(1200px 400px at 70% -10%,#e8fff5,transparent),var(--bg);padding:70px 0 60px;text-align:center}
-.orbit{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;opacity:.5}
-.ring{position:absolute;border:1px solid #bdeed8;border-radius:50%;animation:spin 18s linear infinite}
-.r1{width:520px;height:520px}.r2{width:380px;height:380px;animation-duration:12s;animation-direction:reverse}.r3{width:240px;height:240px;animation-duration:8s}
-.dot{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--brand);box-shadow:0 0 18px var(--brand)}
-@keyframes spin{to{transform:rotate(360deg)}}
-.hero h1{position:relative;font-size:clamp(30px,5vw,52px);margin:0 0 14px;letter-spacing:-1px}
-.hero p.sub{position:relative;font-size:18px;color:var(--mut);max-width:620px;margin:0 auto 26px}
-.cta{position:relative;display:inline-block;background:var(--brand);color:#fff;padding:13px 26px;border-radius:10px;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(10,157,107,.35)}
-.cta.ghost{background:#fff;color:var(--brand);border:1px solid var(--brand);box-shadow:none;margin-left:10px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:26px 0}
-.card{background:#f6fbf8;border:1px solid #e3f1ea;border-radius:14px;padding:18px}
-.card h3{margin:0 0 8px;color:var(--brand);font-size:17px}
-.reveal{opacity:0;transform:translateY(18px);transition:.6s ease}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1120px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.6px;color:var(--brand)}
+.logo b{color:var(--ink)}
+nav.links{display:flex;gap:26px;align-items:center}
+nav.links a{text-decoration:none;color:var(--mut);font-size:14.5px;font-weight:500}
+nav.links a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--brand);color:#fff;font-weight:700;padding:12px 22px;border-radius:10px;text-decoration:none;font-size:15px;box-shadow:0 6px 18px rgba(10,157,107,.30);transition:transform .15s,background .15s;border:none;cursor:pointer}
+.btn:hover{background:var(--brand-d);transform:translateY(-1px)}
+.btn.ghost{background:#fff;color:var(--brand);border:1px solid var(--brand);box-shadow:none}
+.btn.lg{padding:15px 30px;font-size:16px}
+.btn:focus-visible{outline:3px solid #b8ecd6;outline-offset:2px}
+.hero{background:linear-gradient(180deg,#f4faf7 0%,#ffffff 100%);padding:70px 0 56px;text-align:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--brand);background:#e8fff5;padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-size:clamp(34px,5.4vw,60px);line-height:1.05;letter-spacing:-1.5px;margin:0 0 18px;font-weight:800}
+.hero p.sub{font-size:clamp(17px,2.2vw,21px);color:var(--mut);max-width:680px;margin:0 auto 30px}
+.hero .cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+section{padding:66px 0}
+h2.sec{font-size:clamp(26px,3.6vw,40px);letter-spacing:-1px;margin:0 0 12px;font-weight:800}
+.sec-head{text-align:center;max-width:720px;margin:0 auto 40px}
+.sec-head p{color:var(--mut);font-size:17px;margin:0}
+/* problem flow */
+.flow{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:940px;margin:0 auto}
+.flow .col{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:26px}
+.flow h3{margin:0 0 18px;font-size:19px}
+.step{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px dashed var(--line)}
+.step:last-child{border-bottom:none}
+.step .n{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:14px;flex:none}
+.bad .n{background:#ffe3e3;color:#c0392b}
+.good .n{background:var(--brand);color:#fff}
+.step span{font-size:15.5px}
+.bad .step span{color:#7a3b3b}
+/* features */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 10px 30px rgba(14,26,22,.07);transform:translateY(-2px)}
+.card .ic{width:44px;height:44px;border-radius:12px;background:#e8fff5;color:var(--brand);display:grid;place-items:center;font-size:22px;margin-bottom:14px;font-weight:800}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{margin:0;color:var(--mut);font-size:15px}
+/* demo */
+.demo{background:var(--dark);color:#fff;border-radius:20px;padding:34px;display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center}
+.demo h3{margin:0 0 6px;font-size:22px}
+.demo .tag{font-size:12.5px;letter-spacing:.5px;text-transform:uppercase;color:#7fe3bd;font-weight:700}
+.callbtn{margin:18px 0;display:flex;align-items:center;gap:14px}
+.callbtn .disc{width:54px;height:54px;border-radius:50%;background:var(--brand);display:grid;place-items:center;font-size:24px;animation:pulse 1.8s infinite;flex:none}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(10,157,107,.6)}70%{box-shadow:0 0 0 14px rgba(10,157,107,0)}100%{box-shadow:0 0 0 0 rgba(10,157,107,0)}}
+.transcript{background:#0a0f0d;border:1px solid #1e2b26;border-radius:14px;padding:18px;font-size:14.5px;min-height:230px}
+.transcript .ln{margin:0 0 12px;display:flex;gap:10px}
+.transcript .ln .who{font-weight:700;flex:none;width:54px}
+.transcript .ln.ai .who{color:#7fe3bd}
+.transcript .ln.u .who{color:#ffd479}
+.transcript .ln .msg{background:#15201c;padding:8px 12px;border-radius:10px}
+.typing{display:inline-block;width:8px;height:8px;border-radius:50%;background:#7fe3bd;animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.2}}
+/* ROI */
+.roi{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:30px;max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.roi label{display:block;font-size:14px;font-weight:600;margin:14px 0 6px}
+.roi input{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:10px;font-size:15px;background:#fff}
+.roi .est{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;text-align:center;display:flex;flex-direction:column;justify-content:center}
+.roi .est .big{font-size:42px;font-weight:800;color:var(--brand);letter-spacing:-1px}
+.roi .est small{color:var(--mut);font-size:13px;margin-top:8px;display:block}
+.note{font-size:12.5px;color:var(--mut);margin-top:14px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;counter-reset:s}
+.stepc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.stepc .num{counter-increment:s;font-size:15px;font-weight:800;color:var(--brand);margin-bottom:10px}
+.stepc .num::before{content:"0" counter(s)}
+.stepc h3{margin:0 0 6px;font-size:17px}
+.stepc p{margin:0;color:var(--mut);font-size:14.5px}
+/* proof */
+.proof{background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px;max-width:820px;margin:0 auto}
+.proof ul{margin:0;padding-left:20px;color:var(--mut);font-size:15.5px}
+.proof li{margin:8px 0}
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+details{border:1px solid var(--line);border-radius:12px;padding:4px 18px;margin-bottom:12px;background:#fff}
+summary{cursor:pointer;font-weight:600;padding:14px 0;font-size:16px}
+details p{margin:0 0 14px;color:var(--mut);font-size:15px}
+/* final */
+.final{background:linear-gradient(180deg,#0c1512,#0a0f0d);color:#fff;text-align:center;border-radius:22px;padding:60px 24px;max-width:1120px;margin:0 auto}
+.final h2{font-size:clamp(26px,4vw,42px);margin:0 0 10px;font-weight:800;letter-spacing:-1px}
+.final p{color:#a9bdb5;font-size:18px;margin:0 0 26px}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mut);font-size:14px;text-align:center}
+footer a{color:var(--brand);text-decoration:none}
+.reveal{opacity:0;transform:translateY(16px);transition:.55s ease}
 .reveal.in{opacity:1;transform:none}
-section{padding:46px 0}
-h2{font-size:28px;letter-spacing:-.5px;margin:0 0 14px}
-ul.clean{list-style:none;padding:0}.clean li{padding:8px 0 8px 26px;position:relative}.clean li:before{content:"\2713";position:absolute;left:0;color:var(--brand);font-weight:800}
-.faq{margin:10px 0}.faq details{border:1px solid #e3f1ea;border-radius:10px;padding:12px 16px;margin-bottom:10px;background:#f6fbf8}
-.faq summary{cursor:pointer;font-weight:600}
-.price{background:#f6fbf8;border:1px solid #e3f1ea;border-radius:14px;padding:22px;margin:18px 0}
-.pill{display:inline-block;background:#e8fff5;color:var(--brand);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:700;margin:4px 4px 0 0}
-footer{border-top:1px solid #e7efe9;padding:26px 0;color:var(--mut);font-size:14px;text-align:center}
-footer a{color:var(--brand)}
-@media(max-width:600px){.nav a{margin-left:10px;font-size:13px}}
+@media(max-width:860px){.flow,.demo,.roi{grid-template-columns:1fr}.demo{padding:24px}.nav-in nav.links a:not(.btn){display:none}}
+@media(max-width:420px){.hero{padding:48px 0 36px}.btn.lg{padding:14px 22px;font-size:15px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style></head>
 <body>
-<header class="nav"><div class="logo">ConvertX Ops</div><nav><a href="/">Home</a><a href="/blog/">Blog</a><a href="/#faq">FAQ</a><a href="mailto:convertx.ops@gmail.com">Contact</a></nav></header>
 
-<section class="hero"><div class="orbit"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="dot" style="top:18%;left:30%"></div><div class="dot" style="bottom:22%;right:28%"></div></div>
-<h1>Most businesses don't have a lead problem. They have a capture problem.</h1>
-<p class="sub">When a high-intent customer calls after hours and hits voicemail, they call your competitor. We fix that with a 24/7 AI voice agent that answers, qualifies, and books the appointment.</p>
-<a class="cta" href="mailto:convertx.ops@gmail.com?subject=DEMO">Start a live demo</a><a class="cta ghost" href="/blog/">Read the blog</a>
+<header class="nav"><div class="nav-in">
+  <div class="logo">ConvertX<b>Ops</b></div>
+  <nav class="links">
+    <a href="#product">Product</a>
+    <a href="#how">How It Works</a>
+    <a href="#solutions">Solutions</a>
+    <a href="#demo">Demo</a>
+    <a class="btn" href="#demo">Call AI Agent</a>
+  </nav>
+</div></header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">AI Voice Agent for High-Intent Inbound Leads</span>
+    <h1>Stop Losing High-Intent Leads to Missed Calls.</h1>
+    <p class="sub">ConvertX answers inbound calls 24/7, qualifies prospects, and books appointments automatically — even when your team can't pick up.</p>
+    <div class="cta-row">
+      <a class="btn lg" href="#demo">Call the AI Agent</a>
+      <a class="btn lg ghost" href="#how">See How It Works</a>
+    </div>
+  </div>
 </section>
-<section class="wrap reveal"><div class="grid">
-<div class="card"><h3>24/7 answering</h3><p>Every inbound call answered in under 1 second. No missed after-hours or weekend enquiries.</p></div>
-<div class="card"><h3>Auto qualification</h3><p>Filters by your criteria: service type, area, urgency, budget.</p></div>
-<div class="card"><h3>Calendar booking</h3><p>Books the appointment directly. You watch it land while you sleep.</p></div>
-<div class="card"><h3>a live demo</h3><p>See the agent book a real appointment on a live demo. No big upfront build.</p></div>
-</div></section>
-<section class="wrap reveal"><h2>Who we help</h2>
-<div class="grid">
-<div class="card"><h3>Solar</h3><p><a href="/solar/">AI voice agents for Solar businesses &rarr;</a></p></div>
-<div class="card"><h3>Roofing</h3><p><a href="/roofing/">AI voice agents for Roofing businesses &rarr;</a></p></div>
-<div class="card"><h3>HVAC</h3><p><a href="/hvac/">AI voice agents for HVAC businesses &rarr;</a></p></div>
-<div class="card"><h3>Plumbing</h3><p><a href="/plumbing/">AI voice agents for Plumbing businesses &rarr;</a></p></div>
-<div class="card"><h3>Dental</h3><p><a href="/dentist/">AI voice agents for Dental businesses &rarr;</a></p></div>
-<div class="card"><h3>Real Estate</h3><p><a href="/realestate/">AI voice agents for Real Estate businesses &rarr;</a></p></div>
-<div class="card"><h3>Med Spa</h3><p><a href="/medspa/">AI voice agents for Med Spa businesses &rarr;</a></p></div>
-<div class="card"><h3>Law Firm</h3><p><a href="/lawfirm/">AI voice agents for Law Firm businesses &rarr;</a></p></div>
-<div class="card"><h3>Contractor</h3><p><a href="/contractor/">AI voice agents for Contractor businesses &rarr;</a></p></div>
-<div class="card"><h3>Chiropractor</h3><p><a href="/chiro/">AI voice agents for Chiropractor businesses &rarr;</a></p></div>
-</div></section>
 
-<section class="wrap reveal"><h2>Why businesses trust ConvertX Ops</h2>
-<ul class="clean"><li>Same ads, same team, more booked jobs.</li><li>Transparent pricing. You only pay when it recovers jobs you would have lost.</li><li>No long contracts. No extra hire.</li><li>Founder-led by Rihan, numbers-first. He shows the leak before asking for anything.</li></ul>
-<p style="margin-top:18px"><a class="cta" href="mailto:convertx.ops@gmail.com?subject=DEMO">Reply DEMO</a> &mdash; Rihan runs a live demo on your real enquiry flow.</p></section>
-<section class="price wrap reveal"><h2>Pricing &mdash; built so you only win</h2>
-<p><span class="pill">a live demo</span> <span class="pill">no upfront build</span> <span class="pill">no long contract</span></p>
-<p style="margin-top:12px">We prove it on your own leads first. You watch booked appointments land. Only then do you pay &mdash; and only when the agent recovers jobs you would have lost anyway.</p>
-<p style="margin-top:12px"><a class="cta" href="mailto:convertx.ops@gmail.com?subject=DEMO">Reply DEMO to start</a></p></section>
+<!-- PROBLEM -->
+<section class="wrap reveal">
+  <div class="sec-head"><h2 class="sec">The Revenue Leak You Can't See</h2><p>A lead that calls after hours and hits voicemail rarely calls back. They call your competitor.</p></div>
+  <div class="flow">
+    <div class="col bad">
+      <h3>Without ConvertX</h3>
+      <div class="step"><div class="n">1</div><span>Missed call</span></div>
+      <div class="step"><div class="n">2</div><span>Voicemail</span></div>
+      <div class="step"><div class="n">3</div><span>No response</span></div>
+      <div class="step"><div class="n">4</div><span>Prospect calls competitor</span></div>
+    </div>
+    <div class="col good">
+      <h3>With ConvertX</h3>
+      <div class="step"><div class="n">1</div><span>Inbound call</span></div>
+      <div class="step"><div class="n">2</div><span>AI answers</span></div>
+      <div class="step"><div class="n">3</div><span>Qualifies</span></div>
+      <div class="step"><div class="n">4</div><span>Books appointment</span></div>
+      <div class="step"><div class="n">5</div><span>Team gets notified</span></div>
+    </div>
+  </div>
+</section>
 
-<section class="wrap reveal" id="faq"><h2>FAQ</h2>
-<div class="faq">
-<details><summary>How fast does the AI voice agent answer?</summary><p>Under 1 second, 24/7, including evenings, weekends, and holidays.</p></details>
-<details><summary>Will it sound robotic?</summary><p>No. It uses natural conversation and qualifies by your exact criteria.</p></details>
-<details><summary>What does it cost?</summary><p>Start with a live demo. You only pay when it recovers jobs you would have lost. No big upfront build.</p></details>
-<details><summary>Do I need new software?</summary><p>No. It connects to your existing calendar and phone line.</p></details>
-<details><summary>How do I start?</summary><p>Email convertx.ops@gmail.com with subject DEMO. Rihan runs a live demo on your real enquiry flow.</p></details>
-</div></section>
+<!-- FEATURES -->
+<section class="wrap reveal" id="product">
+  <div class="sec-head"><h2 class="sec">What ConvertX Does</h2><p>One system that answers, qualifies, and books — on every call, at any hour.</p></div>
+  <div class="grid3">
+    <div class="card"><div class="ic">24/7</div><h3>Answers every call</h3><p>Inbound calls answered in under a second, including nights, weekends, and holidays.</p></div>
+    <div class="card"><div class="ic">✓</div><h3>Qualifies by your rules</h3><p>Filters by service type, area, timeline, and budget — your criteria, not generic scripts.</p></div>
+    <div class="card"><div class="ic">↗</div><h3>Books the appointment</h3><p>The visit lands directly on your calendar. You watch it appear while you sleep.</p></div>
+    <div class="card"><div class="ic">↻</div><h3>Notifies your team</h3><p>Qualified leads and booked jobs are routed to the right person with full context.</p></div>
+    <div class="card"><div class="ic">⚙</div><h3>Connects to what you have</h3><p>Works with your existing phone line and calendar. No new software for your team.</p></div>
+    <div class="card"><div class="ic">◎</div><h3>Runs a live demo first</h3><p>See it book a real appointment on a demo before anything goes live.</p></div>
+  </div>
+</section>
 
+<!-- DEMO -->
+<section class="wrap reveal" id="demo">
+  <div class="demo">
+    <div>
+      <div class="tag">Live Demo (simulation)</div>
+      <h3>Call the AI Agent</h3>
+      <p style="color:#a9bdb5;margin:6px 0 0">This is a simulated conversation showing how the agent handles a real inbound lead. No call is placed.</p>
+      <div class="callbtn">
+        <div class="disc" id="disc">📞</div>
+        <a class="btn" href="#" id="startCall">Start demo call</a>
+      </div>
+      <p style="color:#7fe3bd;font-size:13px">Tip: connect your real enquiry flow and Rihan runs a live demo on your business.</p>
+    </div>
+    <div class="transcript" id="transcript" aria-live="polite">
+      <div class="ln u"><div class="who">Caller</div><div class="msg">Hi, I saw your solar ad — can someone help with a quote?</div></div>
+      <div class="ln ai"><div class="who">AI</div><div class="msg">Hi! Happy to help. Are you looking to install solar on a home or business?</div></div>
+      <div class="ln u"><div class="who">Caller</div><div class="msg">A home. In Austin, roof faces south.</div></div>
+      <div class="ln ai"><div class="who">AI</div><div class="msg">Great — let me check your roof type and timeline. When would you like the survey?</div></div>
+      <div class="ln u"><div class="who">Caller</div><div class="msg">Next Tuesday afternoon works.</div></div>
+      <div class="ln ai"><div class="who">AI</div><div class="msg">Booked. Tuesday 2pm confirmed and sent to your calendar. Anything else?</div></div>
+      <div class="ln u"><div class="who">Caller</div><div class="msg">No, that's perfect.</div></div>
+      <div class="ln ai"><div class="who">AI</div><div class="msg">Done. Our team will follow up with the survey details. Talk soon!</div></div>
+    </div>
+  </div>
+</section>
 
-<footer>Rihan &mdash; Founder of ConvertX Ops. <a href="mailto:convertx.ops@gmail.com">convertx.ops@gmail.com</a> | +91-8055317114<br>AI voice agents that book estimates 24/7. Built and run by Rihan. <a href="https://convertx-ops.github.io/sitemap.xml">Sitemap</a></footer>
-<script>const io=new IntersectionObserver((es)=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));</script>
+<!-- ROI -->
+<section class="wrap reveal">
+  <div class="sec-head"><h2 class="sec">Estimate Your Missed-Call Opportunity</h2><p>Numbers are estimates based on your inputs. They show potential, not guaranteed recovery.</p></div>
+  <div class="roi">
+    <div>
+      <label for="calls">Monthly inbound calls</label>
+      <input id="calls" type="number" value="120" min="0">
+      <label for="miss">Missed-call rate (%)</label>
+      <input id="miss" type="number" value="40" min="0" max="100">
+      <label for="job">Average job value ($)</label>
+      <input id="job" type="number" value="7000" min="0">
+      <label for="close">Estimated close rate (%)</label>
+      <input id="close" type="number" value="25" min="0" max="100">
+      <p class="note">Assumptions: missed calls are high-intent; a share become booked jobs at your close rate. Adjust to your business.</p>
+    </div>
+    <div class="est">
+      <div>Estimated monthly opportunity<br>from missed calls</div>
+      <div class="big" id="result">$0</div>
+      <small id="resultSub">Based on your inputs above</small>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="wrap reveal" id="how">
+  <div class="sec-head"><h2 class="sec">How It Works</h2><p>Four steps from setup to recovered leads.</p></div>
+  <div class="steps">
+    <div class="stepc"><div class="num"></div><h3>Connect</h3><p>Connect your existing business phone system. No new hardware.</p></div>
+    <div class="stepc"><div class="num"></div><h3>Configure</h3><p>Train the agent on your services, qualification rules, and booking flow.</p></div>
+    <div class="stepc"><div class="num"></div><h3>Answer</h3><p>The AI handles inbound calls and conversations 24/7.</p></div>
+    <div class="stepc"><div class="num"></div><h3>Convert</h3><p>Qualified prospects are routed, booked, and logged per your workflow.</p></div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="wrap reveal" id="solutions">
+  <div class="sec-head"><h2 class="sec">Built First for Solar. Ready for More.</h2><p>Strongest support for solar installers, with the same capture system for other high-intent local service businesses.</p></div>
+  <div class="grid3">
+    <div class="card"><div class="ic">☀</div><h3>Solar</h3><p>Calls about quotes, roof suitability, and surveys — answered and booked.</p></div>
+    <div class="card"><div class="ic">⌂</div><h3>Roofing</h3><p>Storm and replacement enquiries captured the moment they come in.</p></div>
+    <div class="card"><div class="ic">❄</div><h3>HVAC</h3><p>Service and install calls handled after hours, not lost to voicemail.</p></div>
+    <div class="card"><div class="ic">⚙</div><h3>Plumbing</h3><p>Emergency and estimate calls answered the first time.</p></div>
+    <div class="card"><div class="ic">✚</div><h3>Dental & Med Spa</h3><p>New-patient and consult enquiries booked on the spot.</p></div>
+    <div class="card"><div class="ic">⚖</div><h3>Real Estate & Legal</h3><p>Buyer, seller, and intake calls qualified by your criteria.</p></div>
+  </div>
+  <p style="text-align:center;margin-top:22px"><a class="btn ghost" href="/solar/">Explore solar solution →</a></p>
+</section>
+
+<!-- PROOF -->
+<section class="wrap reveal">
+  <div class="sec-head"><h2 class="sec">Built for Measurable Outcomes</h2><p>We don't publish numbers we can't support. Here is what ConvertX is built to measure for every client:</p></div>
+  <div class="proof">
+    <ul>
+      <li><b>Answer rate</b> — share of inbound calls answered by the agent.</li>
+      <li><b>Qualified leads</b> — prospects that meet your criteria.</li>
+      <li><b>Appointments booked</b> — estimates and surveys placed on your calendar.</li>
+      <li><b>Response time</b> — seconds from ring to first word.</li>
+      <li><b>Recovered opportunities</b> — leads that would otherwise have been missed.</li>
+    </ul>
+    <p class="note">During onboarding, Rihan shows the leak in your own enquiry flow before asking for anything.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="wrap reveal">
+  <div class="sec-head"><h2 class="sec">Questions, Answered</h2></div>
+  <div class="faq">
+    <details><summary>Does it replace my existing phone system?</summary><p>No. ConvertX connects to your current business phone line. Your team keeps their numbers and handsets.</p></details>
+    <details><summary>Can it qualify leads using my rules?</summary><p>Yes. You set the criteria — service type, area, timeline, budget — and the agent screens against them.</p></details>
+    <details><summary>Can it book directly into my calendar?</summary><p>Yes. Confirmed appointments land on your calendar automatically, with the caller's details attached.</p></details>
+    <details><summary>Can calls be transferred to my team?</summary><p>Yes. When a call needs a human, the agent can route it to the right person with context.</p></details>
+    <details><summary>Can I customize what the agent says?</summary><p>Yes. The agent is configured around your business, services, and tone.</p></details>
+    <details><summary>What happens if the AI can't answer something?</summary><p>It qualifies what it can and routes the rest to your team with a summary — nothing is dropped.</p></details>
+    <details><summary>How long does setup take?</summary><p>Setup starts with a live demo on your real enquiry flow. Full configuration is scoped with you.</p></details>
+    <details><summary>Can I cancel?</summary><p>Yes. There is no long lock-in. You can stop the service if it isn't recovering missed opportunities.</p></details>
+    <details><summary>What does implementation include?</summary><p>Connection to your phone line and calendar, agent configuration to your rules, and a live demo before go-live.</p></details>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="wrap reveal">
+  <div class="final">
+    <h2>Your next lead could already be calling.</h2>
+    <p>Make sure someone answers.</p>
+    <div class="cta-row" style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn lg" href="#demo">Call the AI Agent</a>
+      <a class="btn lg ghost" href="mailto:convertx.ops@gmail.com?subject=DEMO">Book a Demo</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  ConvertX Ops — Founder Rihan Pathan. <a href="mailto:convertx.ops@gmail.com">convertx.ops@gmail.com</a> | +91-8055317114<br>
+  AI voice agents that book solar & local-service estimates 24/7. <a href="https://convertx-ops.github.io/sitemap.xml">Sitemap</a>
+</footer>
+
+<script>
+// reveal on scroll
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// ROI calculator
+function calc(){
+  const c=+document.getElementById('calls').value||0;
+  const m=(+document.getElementById('miss').value||0)/100;
+  const j=+document.getElementById('job').value||0;
+  const cl=(+document.getElementById('close').value||0)/100;
+  const opp=Math.round(c*m*cl*j);
+  document.getElementById('result').textContent='$'+opp.toLocaleString();
+}
+['calls','miss','job','close'].forEach(id=>document.getElementById(id).addEventListener('input',calc));
+calc();
+// demo call simulation
+document.getElementById('startCall').addEventListener('click',function(e){
+  e.preventDefault();
+  const t=document.getElementById('transcript');
+  const typing=document.createElement('div');
+  typing.className='ln ai';typing.innerHTML='<div class="who">AI</div><div class="msg"><span class="typing"></span></div>';
+  t.appendChild(typing);t.scrollTop=t.scrollHeight;
+  setTimeout(()=>{typing.remove();
+    const done=document.createElement('div');done.className='ln ai';
+    done.innerHTML='<div class="who">AI</div><div class="msg">Demo complete — in a live run this is a real booked appointment on your calendar.</div>';
+    t.appendChild(done);t.scrollTop=t.scrollHeight;
+  },1600);
+});
+</script>
 </body></html>
