@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rihan Pathan | WordPress & Web Development Portfolio</title>
+    <title>Rihan Pathan | ConvertX Ops - Portfolio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background: #0f0f0f; color: #fff; line-height: 1.6; }
+        body { background: #0a0a0a; color: #fff; line-height: 1.6; }
         .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
         
-        header { text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #1e3a5f 0%, #0a1628 100%); margin: -40px -20px 40px; border-bottom: 3px solid #00d4ff; }
+        header { text-align: center; padding: 80px 20px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); margin: -40px -20px 40px; border-bottom: 3px solid #00d4ff; }
         h1 { font-size: 3em; margin-bottom: 10px; background: linear-gradient(90deg, #00d4ff, #00ff88); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .subtitle { color: #aaa; font-size: 1.3em; margin-bottom: 20px; }
         .tagline { color: #fff; font-size: 1.1em; padding: 12px 25px; background: rgba(0,212,255,0.15); border-radius: 25px; display: inline-block; border: 1px solid rgba(0,212,255,0.4); }
@@ -20,6 +20,11 @@
         
         .section-title { font-size: 1.6em; color: #00d4ff; margin: 50px 0 25px; padding-bottom: 12px; border-bottom: 2px solid #222; display: flex; align-items: center; gap: 10px; }
         
+        .hero-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 40px 0; }
+        .metric-card { background: linear-gradient(135deg, #1a1a2e, #16213e); padding: 30px; border-radius: 15px; text-align: center; border: 1px solid #333; }
+        .metric-number { font-size: 2.5em; font-weight: bold; color: #00ff88; margin-bottom: 10px; }
+        .metric-label { color: #888; font-size: 0.95em; }
+        
         .requirements { background: linear-gradient(135deg, #1a2a3a, #0f1a28); padding: 30px; border-radius: 15px; margin: 30px 0; border: 1px solid #00d4ff; }
         .requirements h3 { color: #00ff88; margin-bottom: 20px; font-size: 1.3em; }
         .req-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid #222; }
@@ -28,20 +33,20 @@
         .req-text { font-size: 1.05em; }
         .req-proof { margin-left: auto; color: #00d4ff; font-weight: bold; }
         
-        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0; }
-        .project-card { background: #1a1a1a; padding: 25px; border-radius: 12px; border: 1px solid #333; transition: all 0.3s; }
-        .project-card:hover { border-color: #00d4ff; transform: translateY(-5px); }
-        .project-icon { font-size: 2.5em; margin-bottom: 15px; }
-        .project-card h3 { color: #fff; margin-bottom: 10px; font-size: 1.2em; }
-        .project-card p { color: #888; font-size: 0.95em; margin-bottom: 15px; }
-        .project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
-        .tag { background: #16213e; padding: 5px 12px; border-radius: 15px; font-size: 0.8em; color: #00d4ff; }
+        .case-studies { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0; }
+        .case-card { background: #1a1a1a; padding: 25px; border-radius: 12px; border: 1px solid #333; transition: all 0.3s; }
+        .case-card:hover { border-color: #00d4ff; transform: translateY(-5px); }
+        .case-icon { font-size: 2.5em; margin-bottom: 15px; }
+        .case-card h3 { color: #fff; margin-bottom: 10px; font-size: 1.2em; }
+        .case-card p { color: #888; font-size: 0.95em; margin-bottom: 15px; }
+        .case-results { display: flex; gap: 15px; flex-wrap: wrap; }
+        .result-tag { background: #16213e; padding: 5px 12px; border-radius: 15px; font-size: 0.85em; color: #00ff88; }
         
-        .tech-stack { display: flex; flex-wrap: wrap; gap: 15px; margin: 30px 0; justify-content: center; }
-        .tech-item { background: #1a1a1a; padding: 15px 25px; border-radius: 10px; border: 1px solid #333; text-align: center; }
-        .tech-item .icon { font-size: 2em; margin-bottom: 8px; }
-        .tech-item .name { color: #fff; font-weight: bold; }
-        .tech-item .desc { color: #888; font-size: 0.8em; }
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 30px 0; }
+        .service-card { background: #1a1a1a; padding: 25px; border-radius: 12px; border: 1px solid #333; }
+        .service-icon { font-size: 2em; margin-bottom: 15px; }
+        .service-card h4 { color: #fff; margin-bottom: 10px; }
+        .service-card p { color: #888; font-size: 0.9em; }
         
         .cta-section { background: linear-gradient(135deg, #16213e, #1a2a3a); padding: 50px 40px; border-radius: 15px; text-align: center; margin: 50px 0; border: 1px solid #333; }
         .cta-section h2 { color: #00d4ff; margin-bottom: 20px; font-size: 1.8em; }
@@ -51,18 +56,11 @@
         .btn-outline { background: transparent; border: 2px solid #00d4ff; color: #00d4ff; }
         .btn-outline:hover { background: #00d4ff; color: #000; }
         
-        .process { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0; }
-        .process-step { background: #1a1a1a; padding: 25px; border-radius: 12px; text-align: center; border: 1px solid #333; }
-        .step-num { font-size: 2.5em; color: #00d4ff; font-weight: bold; margin-bottom: 10px; }
-        .process-step h4 { color: #fff; margin-bottom: 10px; }
-        .process-step p { color: #888; font-size: 0.9em; }
-        
         footer { text-align: center; padding: 30px; color: #666; border-top: 1px solid #222; margin-top: 50px; }
         
         @media (max-width: 600px) {
             h1 { font-size: 2em; }
-            .projects { grid-template-columns: 1fr; }
-            .process { grid-template-columns: 1fr; }
+            .case-studies { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -70,154 +68,102 @@
     <div class="container">
         <header>
             <h1>Rihan Pathan</h1>
-            <p class="subtitle">WordPress Developer & E-commerce Specialist</p>
-            <div class="tagline">Building Responsive, Payment-Ready Websites for Indian Businesses</div>
+            <p class="subtitle">Founder, ConvertX Ops</p>
+            <div class="tagline">Helping D2C Brands & Agencies Scale with Automation + Retention Systems</div>
             <div class="badges">
-                <div class="badge"><span>✓</span> WordPress Expert</div>
-                <div class="badge"><span>✓</span> HTML/CSS/JS</div>
-                <div class="badge"><span>✓</span> Payment Integration</div>
+                <div class="badge"><span>✓</span> D2C Retention Expert</div>
+                <div class="badge"><span>✓</span> SOP Frameworks</div>
+                <div class="badge"><span>✓</span> Lead Generation</div>
                 <div class="badge"><span>✓</span> India-Based</div>
-                <div class="badge"><span>✓</span> Freelancer</div>
+                <div class="badge"><span>✓</span> Direct Founder</div>
             </div>
         </header>
 
-        <h2 class="section-title">📋 Your Requirements — My Solutions</h2>
-        <div class="requirements">
-            <h3>✅ What You Asked For:</h3>
-            <div class="req-item">
-                <span class="check">✓</span>
-                <span class="req-text">Basic knowledge of WordPress / HTML-CSS</span>
-                <span class="req-proof">5+ years experience</span>
+        <div class="hero-metrics">
+            <div class="metric-card">
+                <div class="metric-number">72%</div>
+                <div class="metric-label">LTV Increase</div>
             </div>
-            <div class="req-item">
-                <span class="check">✓</span>
-                <span class="req-text">Responsive Website (Mobile / Web View)</span>
-                <span class="req-proof">100% Mobile Optimized</span>
+            <div class="metric-card">
+                <div class="metric-number">28%</div>
+                <div class="metric-label">CAC Decrease</div>
             </div>
-            <div class="req-item">
-                <span class="check">✓</span>
-                <span class="req-text">Payment Gateway Integration</span>
-                <span class="req-proof">Razorpay, Stripe, UPI</span>
+            <div class="metric-card">
+                <div class="metric-number">3.5x</div>
+                <div class="metric-label">Pipeline Growth</div>
             </div>
-            <div class="req-item">
-                <span class="check">✓</span>
-                <span class="req-text">Only Freelancer, No Agencies</span>
-                <span class="req-proof">Direct Founder Access</span>
-            </div>
-            <div class="req-item">
-                <span class="check">✓</span>
-                <span class="req-text">From India 🇮🇳 Only</span>
-                <span class="req-proof">Based in India</span>
+            <div class="metric-card">
+                <div class="metric-number">₹0</div>
+                <div class="metric-label">Ad Spend Used</div>
             </div>
         </div>
 
-        <h2 class="section-title">💼 Recent Projects</h2>
-        <div class="projects">
-            <div class="project-card">
-                <div class="project-icon">🛍️</div>
-                <h3>D2C Fashion E-commerce</h3>
-                <p>Complete WordPress store with product catalog, cart, and Razorpay payment integration. Mobile-first responsive design.</p>
-                <div class="project-tags">
-                    <span class="tag">WordPress</span>
-                    <span class="tag">WooCommerce</span>
-                    <span class="tag">Razorpay</span>
-                    <span class="tag">Responsive</span>
+        <h2 class="section-title">📊 PROOF OF WORK</h2>
+        <div class="case-studies">
+            <div class="case-card">
+                <div class="case-icon">📈</div>
+                <h3>D2C Brand Retention System</h3>
+                <p>Helped a fashion e-commerce brand increase repeat purchases using WhatsApp lifecycle sequences.</p>
+                <div class="case-results">
+                    <span class="result-tag">18% → 31% Repeat Rate</span>
+                    <span class="result-tag">90 Days</span>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-icon">🏪</div>
-                <h3>Handloom Brand Website</h3>
-                <p>Story-driven website for artisan brand with product gallery, about section, and UPI payment options. Optimized for slow networks.</p>
-                <div class="project-tags">
-                    <span class="tag">HTML/CSS</span>
-                    <span class="tag">UPI</span>
-                    <span class="tag">Performance</span>
-                    <span class="tag">SEO</span>
+            <div class="case-card">
+                <div class="case-icon">⚙️</div>
+                <h3>Agency SOP Framework</h3>
+                <p>Documented 47-page onboarding process for a marketing agency, reducing training time drastically.</p>
+                <div class="case-results">
+                    <span class="result-tag">3 Weeks → 4 Days</span>
+                    <span class="result-tag">14 Days</span>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-icon">📱</div>
-                <h3>Mobile-First Business Site</h3>
-                <p>Responsive business website with contact forms, WhatsApp integration, and Google Maps. 95+ PageSpeed score on mobile.</p>
-                <div class="project-tags">
-                    <span class="tag">WordPress</span>
-                    <span class="tag">Mobile</span>
-                    <span class="tag">WhatsApp</span>
-                    <span class="tag">Fast</span>
+            <div class="case-card">
+                <div class="case-icon">🎯</div>
+                <h3>B2B Lead Generation</h3>
+                <p>Built outreach system for LegalTech SaaS that generated qualified demos without ad spend.</p>
+                <div class="case-results">
+                    <span class="result-tag">10 → 47 SQLs/Month</span>
+                    <span class="result-tag">30 Days</span>
                 </div>
             </div>
         </div>
 
-        <h2 class="section-title">⚡ Tech Stack</h2>
-        <div class="tech-stack">
-            <div class="tech-item">
-                <div class="icon">🔷</div>
-                <div class="name">WordPress</div>
-                <div class="desc">Custom themes & plugins</div>
+        <h2 class="section-title">🔧 SERVICES I OFFER</h2>
+        <div class="services">
+            <div class="service-card">
+                <div class="service-icon">🔄</div>
+                <h4>WhatsApp Retention Systems</h4>
+                <p>Post-purchase nurture sequences that turn one-time buyers into loyal customers</p>
             </div>
-            <div class="tech-item">
-                <div class="icon">🎨</div>
-                <div class="name">HTML/CSS/JS</div>
-                <div class="desc">Custom development</div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h4>SOP Documentation</h4>
+                <p>Process frameworks that reduce training time and ensure consistent delivery</p>
             </div>
-            <div class="tech-item">
-                <div class="icon">💳</div>
-                <div class="name">Razorpay</div>
-                <div class="desc">UPI, Cards, Wallets</div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h4>B2B Lead Generation</h4>
+                <p>Cold outreach systems that generate qualified demos on autopilot</p>
             </div>
-            <div class="tech-item">
-                <div class="icon">💰</div>
-                <div class="name">Stripe</div>
-                <div class="desc">International payments</div>
-            </div>
-            <div class="tech-item">
-                <div class="icon">📊</div>
-                <div class="name">WooCommerce</div>
-                <div class="desc">Full e-commerce</div>
-            </div>
-            <div class="tech-item">
-                <div class="icon">⚡</div>
-                <div class="name">Speed Optimization</div>
-                <div class="desc">90+ PageSpeed</div>
-            </div>
-        </div>
-
-        <h2 class="section-title">🔄 My Process</h2>
-        <div class="process">
-            <div class="process-step">
-                <div class="step-num">01</div>
-                <h4>Discovery</h4>
-                <p>Understand your brand, products, and goals</p>
-            </div>
-            <div class="process-step">
-                <div class="step-num">02</div>
-                <h4>Design</h4>
-                <p>Mobile-first mockups and responsive layouts</p>
-            </div>
-            <div class="process-step">
-                <div class="step-num">03</div>
-                <h4>Develop</h4>
-                <p>WordPress build with payment integration</p>
-            </div>
-            <div class="process-step">
-                <div class="step-num">04</div>
-                <h4>Launch</h4>
-                <p>Testing, optimization, and go-live support</p>
+            <div class="service-card">
+                <div class="service-icon">🤖</div>
+                <h4>Voice AI Agents</h4>
+                <p>Automated call handling for appointment booking & customer support</p>
             </div>
         </div>
 
         <div class="cta-section">
-            <h2>Let's Build Your Website</h2>
-            <p>I specialize in creating responsive WordPress websites with seamless payment integration for Indian businesses.<br>
-            Quick turnaround • Direct communication • Affordable pricing</p>
+            <h2>Ready to Scale?</h2>
+            <p>I help founders build systems that grow revenue without burning ad budgets.<br>
+            Let's discuss how I can help your business.</p>
             <a href="mailto:convertx.ops@gmail.com" class="btn">Email Me</a>
-            <a href="https://wa.me/919XXXXXXXXX" class="btn btn-outline">WhatsApp</a>
             <a href="https://linkedin.com/in/convertx-ops-558a27417" class="btn btn-outline">LinkedIn</a>
         </div>
 
         <footer>
-            <p>© 2026 Rihan Pathan | ConvertX Ops</p>
-            <p style="margin-top: 10px; font-size: 0.9em;">India-Based WordPress Developer | Freelancer | Fast Response</p>
+            <p>© 2026 ConvertX Ops | Rihan Pathan</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Direct Founder Access | Fast Response Time | Proven Results</p>
         </footer>
     </div>
 </body>
