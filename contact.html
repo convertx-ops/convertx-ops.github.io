@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ConvertX Ops</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #00d4ff;
+            --secondary: #00ff88;
+            --dark: #0a0a0a;
+            --card: #111111;
+            --border: #222;
+            --text: #fff;
+            --muted: #888;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(10,10,10,0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+        .logo { font-size: 1.5em; font-weight: 700; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links a { color: var(--muted); text-decoration: none; margin-left: 30px; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 40px;
+        }
+        
+        .contact-info h1 {
+            font-size: 3em;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #fff 0%, #ccc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .contact-info p {
+            color: var(--muted);
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 25px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            text-decoration: none;
+            color: var(--text);
+            transition: 0.3s;
+        }
+        .contact-method:hover {
+            border-color: var(--primary);
+            transform: translateX(5px);
+        }
+        .method-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+        .method-info h3 {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .method-info span {
+            color: var(--muted);
+            font-size: 0.9em;
+        }
+        
+        .quick-action {
+            margin-top: 50px;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(0,212,255,0.1), rgba(0,255,136,0.05));
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            text-align: center;
+        }
+        .quick-action h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .quick-action p {
+            color: var(--muted);
+            margin-bottom: 25px;
+        }
+        .btn-primary {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--dark);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,212,255,0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-info h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">ConvertX Ops</div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/blog/">Blog</a>
+            <a href="/book-demo.html">Book Demo</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h1>Let's Talk</h1>
+                <p>Ready to automate your business? Get in touch and we'll show you how.</p>
+                
+                <div class="contact-methods">
+                    <a href="mailto:convertx.ops@gmail.com" class="contact-method">
+                        <div class="method-icon">📧</div>
+                        <div class="method-info">
+                            <h3>Email Us</h3>
+                            <span>convertx.ops@gmail.com</span>
+                        </div>
+                    </a>
+                    
+                    <a href="tel:+918055317114" class="contact-method">
+                        <div class="method-icon">📱</div>
+                        <div class="method-info">
+                            <h3>Call Us</h3>
+                            <span>+91 80553 17114</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/convertx-ops-558a27417" target="_blank" class="contact-method">
+                        <div class="method-icon">💼</div>
+                        <div class="method-info">
+                            <h3>LinkedIn</h3>
+                            <span>Connect with Rihan</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="quick-action">
+                <h3>Want Results Fast?</h3>
+                <p>Book a free 15-minute demo call. We'll show you exactly how our AI agents can work for your business.</p>
+                <a href="/book-demo.html" class="btn-primary">Book Free Demo →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
